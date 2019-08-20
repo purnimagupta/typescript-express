@@ -40,7 +40,7 @@ class App {
     const {
       MONGODB_URL,
     } = process.env;
-    mongoose.connect(`mongodb://${MONGODB_URL}`,  { useNewUrlParser: true }, function(err: MongoError){
+    mongoose.connect(`mongodb://${MONGODB_URL}`,  { useNewUrlParser: true }, function(err: any){
       if(err) {
         console.log('Error connecting to: ', MONGODB_URL)
       }

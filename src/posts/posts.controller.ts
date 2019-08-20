@@ -1,11 +1,8 @@
 import * as express from 'express';
-import Controller from '../interfaces/controller.interface';
 import Post from './post.interface';
 import postModel from './posts.model';
-import HttpException from 'exceptions/HttpException';
-import PostNotFoundException from 'exceptions/PostNotFoundException';
-import createPost from './post.dto';
-import validationMiddleware from 'middleware/validation.middleware';
+import PostNotFoundException from '../exceptions/PostNotFoundException';
+import validationMiddleware from '../middleware/validation.middleware';
 import CreatePostDto from './post.dto';
 
 class PostController {
